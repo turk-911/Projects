@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    background-color: red;
+    margin: 0;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(135, 207, 235, 0.501);
+}
+.container{
+    height: 600px;
+    width: 500px;
+    box-shadow: 0 0 20px skyblue;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 9;
+    border: 2px dashed rgba(135, 207, 235, 0.899);
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 10px;
+    padding: 30px; 
+}
+.btn{
+    height: 60px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px skyblue;
+    background-color: skyblue;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.login, .signup{
+    font-size: 22px;
+    padding: 20px;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.slider{
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    transition: all 0.5s ease-out;
+}
+.moveslider{
+    left: 250px;
+}
+.form-section{
+    height: 500px;
+    width: 1000px;
+    padding: 20px 0;
+    display: flex;
+    position: relative;
+    transition: all 0.5s ease-out;
+    left: 0;
+}
+.form-section-move{
+    left: -500px;
+}
+.login-box, .sign-up-box{
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+.login-box{
+    gap: 50px;
+}
+.sign-up-box{
+    gap: 30px;
+}
+.ele{
+    height: 60px;
+    width: 400px;
+    outline: none;
+    border: none;
+    color: black; 
+    border: 1px solid skyblue;
+    /* background-color: ; */
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.clkbtn{
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: skyblue;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 650px){
+    .container{
+        height: 600px;
+        width: 300px;
+    }
+    .title{
+        font-size: 15px;
+    }
+    .btn{
+        height: 50px;
+        width: 200px;
+        margin: 20px auto;
+    }
+    .login, .signup{
+        font-size: 19px;
+    }
+    .slider{
+        height: 50px;
+        width: 100px;
+        left: 50px;
+    }
+    .moveslider{
+        left: 150px;
+    }
+    .form-section{
+        height: 500px;
+        width: 600px;
+    }
+    .form-section-move{
+        left: -300px;
+    }
+    .login-box, .sign-up-box{
+        height: 100%;
+        width: 300px;
+    }
+    .ele{
+        height: 50px;
+        width: 250px;
+        font-size: 15px;
+    }
+    .clkbtn{
+        height: 50px;
+        width: 130px;
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container{
+        height: 600px;
+        width: 250px;
+    }
+    .btn{
+        height: 50px;
+        width: 200px;
+        margin: 20px auto;
+    }
+    .login, .signup{
+        font-size: 19px;
+    }
+    .slider{
+        height: 50px;
+        width: 100px;
+        left: 27px;
+    }
+    .moveslider {
+        left: 127px;
+    }
+    .form-section {
+        height: 500px;
+        width: 500px;
+    }
+    .form-section-move {
+        left: -250px;
+    }
+    .login-box, .sign-up-box {
+        height: 100%;
+        width: 250px;
+    }
+    .ele {
+        height: 50px;
+        width: 220px;
+        font-size: 15px;
+    }
+    .clkbtn {
+        height: 50px;
+        width: 130px;
+        font-size: 19px;
+    }
+}
